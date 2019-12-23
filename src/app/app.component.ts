@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import {Component, HostBinding} from '@angular/core';
+import {fadeStateTrigger} from "./shared/animation/fade.animation";
 
 @Component({
   selector: 'wfm-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [fadeStateTrigger],
 })
 export class AppComponent {
-  title = 'home-mone';
+  @HostBinding('@fade') a = true;
 }
+

@@ -1,0 +1,31 @@
+<div class="title-block">
+  <h3 class="title">
+    Страница истории <span class="sparkline bar"></span>
+    <div class="pull-right">
+      <button class="btn-sm btn btn-primary-outline" (click)="openFilter()">
+        <i class="fa fa-filter"></i>
+      </button>
+    </div>
+  </h3>
+
+</div>
+  <div *ngIf="!isLoaded" class="text-center">
+    <wfm-loader></wfm-loader>
+  </div>
+  <div *ngIf="isLoaded">
+    <wfm-history-chart
+      [data]="charData"
+    ></wfm-history-chart>
+    <wfm-history-event
+      [categories]="categories"
+      [events]="filteredEvents"
+    ></wfm-history-event>
+    <div *ngIf="isFilterVisible">
+      <wfm-history-filter
+        [categories]="categories"
+        (onFilterApply)="onFilterApply($event)"
+        (onFilterCancel)="onFilterCancel()"
+      ></wfm-history-filter>
+    </div>
+
+  </div>

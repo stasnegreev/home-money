@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "name": "Администратор"
+    },
+    {
+      "email": "q@w.e",
+      "password": "qwqwqw",
+      "name": "qwqwqw",
+      "id": 2
+    },
+    {
+      "email": "q@w.efgrh5",
+      "password": "qwqwqw554",
+      "name": "qwqwqw112",
+      "id": 3
+    },
+    {
+      "email": "q443@w.e",
+      "password": "qwqwqw423",
+      "name": "qwqwqwqq",
+      "id": 4
+    }
+  ],
+  "bill": {
+    "value": 26205,
+    "currency": "RUB"
+  },
+  "currencyEx": [
+    {
+      "base": "RUB",
+      "date": "18/10/2019",
+      "rates": {
+        "USD": 0.5,
+        "EUR": 0.4
+      }
+    }
+  ],
+  "categories": [
+    {
+      "name": "Дом",
+      "capacity": 1000,
+      "id": 1
+    },
+    {
+      "name": "Еда",
+      "capacity": 1000,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Машина",
+      "capacity": 1000
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "type": "income",
+      "amount": 5025,
+      "category": 1,
+      "date": "12.09.2019 19:49:02",
+      "description": "Подарили еду в гостях"
+    },
+    {
+      "id": 2,
+      "type": "outcome",
+      "amount": 630,
+      "category": 2,
+      "date": "27.09.2019 19:49:02",
+      "description": "Купил посудомоечную машину"
+    },
+    {
+      "type": "outcome",
+      "amount": 11480,
+      "category": 3,
+      "date": "22.09.2019 14:00:48",
+      "id": 3,
+      "description": "Поход в окей с баллами. Бесплатная еда"
+    }
+  ]
+}
